@@ -1,0 +1,22 @@
+{
+  "name": "sheer",
+  "version": "1.0.0",
+  "description": "a web server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xianfengyuan/sheer"
+  },
+  "author": "Xianfeng Yuan",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/xianfengyuan/sheer/issues"
+  },
+  "homepage": "https://github.com/xianfengyuan/sheer",
+  "dependencies": {
+    "express": "~4.9.8"
+  }
+}
