@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{title}}</title>
+        {{#if bcss}}<link href="{{bcss}}" rel="stylesheet">
+        {{else}}
+          {{#if ncss}}
+          {{else}}
+            <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+          {{/if}}
+        {{/if}}
+        {{#each additionalCss}}
+            <link href="{{this}}" rel="stylesheet">
+        {{/each}}
+        {{#each additionalJavascript}}
+            <script src="{{this}}"></script>
+        {{/each}}
+    </head>
+
+    <body>
+      {{#if idd}}
+         <div id="{{idd}}">
+      {{else}}
+         <div class="container">
+      {{/if}}
+            {{{body}}}
+       </div>
+    </body>
+</html>
